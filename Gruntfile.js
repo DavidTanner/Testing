@@ -6,10 +6,10 @@ module.exports = function(grunt){
         bumpup: {
                 file: 'package.json'
         }
-
     });
     
     grunt.loadNpmTasks('grunt-bumpup');
 
+    grunt.registerTask('version', ['bumpup:build']);
     
 };
